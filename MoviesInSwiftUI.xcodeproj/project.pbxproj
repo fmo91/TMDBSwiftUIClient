@@ -19,6 +19,8 @@
 		BB844C5526D1A11D0055EA6F /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB844C5426D1A11D0055EA6F /* MoviesRepository.swift */; };
 		BB844C5726D1A1640055EA6F /* DefaultMoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB844C5626D1A1640055EA6F /* DefaultMoviesRepository.swift */; };
 		BB844C5A26D1A2CE0055EA6F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB844C5926D1A2CE0055EA6F /* Colors.xcassets */; };
+		BB844C5D26D1A5340055EA6F /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB844C5C26D1A5340055EA6F /* Secrets.plist */; };
+		BB844C5F26D1A53D0055EA6F /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB844C5E26D1A53D0055EA6F /* Secrets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		BB844C5426D1A11D0055EA6F /* MoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
 		BB844C5626D1A1640055EA6F /* DefaultMoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMoviesRepository.swift; sourceTree = "<group>"; };
 		BB844C5926D1A2CE0055EA6F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		BB844C5C26D1A5340055EA6F /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
+		BB844C5E26D1A53D0055EA6F /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +213,8 @@
 			children = (
 				BB844C2026D1844B0055EA6F /* Assets.xcassets */,
 				BB844C5926D1A2CE0055EA6F /* Colors.xcassets */,
+				BB844C5C26D1A5340055EA6F /* Secrets.plist */,
+				BB844C5E26D1A53D0055EA6F /* Secrets.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -323,6 +329,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB844C5D26D1A5340055EA6F /* Secrets.plist in Resources */,
 				BB844C5A26D1A2CE0055EA6F /* Colors.xcassets in Resources */,
 				BB844C2426D1844B0055EA6F /* Preview Assets.xcassets in Resources */,
 				BB844C2126D1844B0055EA6F /* Assets.xcassets in Resources */,
@@ -351,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB844C5326D1A08D0055EA6F /* MoviesListViewModel.swift in Sources */,
+				BB844C5F26D1A53D0055EA6F /* Secrets.swift in Sources */,
 				BB844C1F26D1844A0055EA6F /* ContentView.swift in Sources */,
 				BB844C1D26D1844A0055EA6F /* MoviesInSwiftUIApp.swift in Sources */,
 				BB844C5126D184900055EA6F /* MoviesListScreen.swift in Sources */,
