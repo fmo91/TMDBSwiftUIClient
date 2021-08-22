@@ -9,5 +9,5 @@ import Foundation
 import Combine
 
 protocol MoviesRepository {
-    func getMovies() -> AnyPublisher<[Movie], Error>
+    func getMovies(page: Int) -> AnyPublisher<MoviesList, Error>
 }

@@ -12,8 +12,15 @@ struct MoviesListScreen: View {
     @StateObject var viewModel = MoviesListViewModel()
 
     var body: some View {
-        List(viewModel.movies) { movie in
-            Text(movie.title)
+        switch viewModel.movies {
+        case .idle, .loading:
+            Text("Loading...")
+        case .error(let error):
+            Text("Failed :: \(error.localizedDescription)")
+        case .loaded(let movies):
+            List(movies.movies) { movie in
+                Text("Movie: \(movie.title)")
+            }
         }
     }
 }
