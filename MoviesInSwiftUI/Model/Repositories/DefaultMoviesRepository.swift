@@ -37,7 +37,7 @@ extension Movie {
         }
 
         self.id = id
-        self.posterPath = tmdbMovie.posterPath
+        self.posterPath = "https://image.tmdb.org/t/p/w500" + (tmdbMovie.posterPath ?? "")
         self.adult = tmdbMovie.adult
         self.overview = tmdbMovie.overview
         self.releaseDate = tmdbMovie.releaseDate
