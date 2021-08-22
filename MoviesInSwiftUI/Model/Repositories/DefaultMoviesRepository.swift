@@ -31,13 +31,23 @@ final class DefaultMoviesRepository: MoviesRepository {
 extension Movie {
     init?(tmdbMovie: TMDBMovie) {
         guard
-            let id = tmdbMovie.id,
-            let title = tmdbMovie.title
+            let id = tmdbMovie.id
         else {
             return nil
         }
 
-        self.id = id.description
-        self.title = title
+        self.id = id
+        self.posterPath = tmdbMovie.posterPath
+        self.adult = tmdbMovie.adult
+        self.overview = tmdbMovie.overview
+        self.releaseDate = tmdbMovie.releaseDate
+        self.genreIds = tmdbMovie.genreIds
+        self.originalTitle = tmdbMovie.originalTitle
+        self.title = tmdbMovie.title
+        self.backdropPath = tmdbMovie.backdropPath
+        self.popularity = tmdbMovie.popularity
+        self.voteCount = tmdbMovie.voteCount
+        self.video = tmdbMovie.video
+        self.voteAverage = tmdbMovie.voteAverage
     }
 }
