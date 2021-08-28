@@ -8,12 +8,18 @@
 import Foundation
 import SwiftUI
 
-struct MoviesListView: View {
+struct MoviesListView<V: View>: View {
     let movies: [Movie]
+    let destination: (Movie) -> V
 
     var body: some View {
         List(movies) { movie in
-            MovieCell(movie: movie)
+            NavigationLink(
+                destination: destination(movie),
+                label: {
+                    MovieCell(movie: movie)
+                }
+            )
         }
     }
 }

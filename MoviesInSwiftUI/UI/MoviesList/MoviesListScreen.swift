@@ -24,7 +24,12 @@ struct MoviesListScreen: View {
         case .error(let error):
             Text("Failed :: \(error.localizedDescription)")
         case .loaded(let movies):
-            MoviesListView(movies: movies.movies)
+            MoviesListView(
+                movies: movies.movies,
+                destination: { (movie: Movie) in
+                    return MovieDetailScreen(movie: movie)
+                }
+            )
         }
     }
 }

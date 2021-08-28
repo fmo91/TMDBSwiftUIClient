@@ -33,6 +33,7 @@
 		BB844C7926D1ED0F0055EA6F /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB844C7826D1ED0F0055EA6F /* MovieCell.swift */; };
 		BB844C7B26D1F2280055EA6F /* MoviesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB844C7A26D1F2280055EA6F /* MoviesListView.swift */; };
 		BB844C7E26D2CF840055EA6F /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BB844C7D26D2CF840055EA6F /* SDWebImageSwiftUI */; };
+		BB844C8126D2D0E40055EA6F /* MovieDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB844C8026D2D0E40055EA6F /* MovieDetailScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		BB844C7526D1EB8F0055EA6F /* UIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIState.swift; sourceTree = "<group>"; };
 		BB844C7826D1ED0F0055EA6F /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		BB844C7A26D1F2280055EA6F /* MoviesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListView.swift; sourceTree = "<group>"; };
+		BB844C8026D2D0E40055EA6F /* MovieDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 			children = (
 				BB844C4E26D184810055EA6F /* Base */,
 				BB844C4F26D184850055EA6F /* MoviesList */,
+				BB844C7F26D2D0D00055EA6F /* MovieDetail */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -291,6 +294,14 @@
 				BB844C7A26D1F2280055EA6F /* MoviesListView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		BB844C7F26D2D0D00055EA6F /* MovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BB844C8026D2D0E40055EA6F /* MovieDetailScreen.swift */,
+			);
+			path = MovieDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -443,6 +454,7 @@
 				BB844C6326D1A7700055EA6F /* TMDBAPIDefaultClient.swift in Sources */,
 				BB844C7026D1DA6C0055EA6F /* MoviesList.swift in Sources */,
 				BB844C6126D1A75F0055EA6F /* TMDBAPIClient.swift in Sources */,
+				BB844C8126D2D0E40055EA6F /* MovieDetailScreen.swift in Sources */,
 				BB844C5126D184900055EA6F /* MoviesListScreen.swift in Sources */,
 				BB844C6B26D1AD770055EA6F /* NetworkClient.swift in Sources */,
 				BB844C7B26D1F2280055EA6F /* MoviesListView.swift in Sources */,
